@@ -38,7 +38,8 @@ header{
     /* display: inline; */
     position: absolute;
     top: -0.5em;
-    right: 20em;
+    right: 20%;
+    margin-left: 10%;
     /* margin-left: 5em; */
     /* padding-right: 10%; */
 }
@@ -58,12 +59,32 @@ header{
     margin-top: 6em;
     text-align: center;
 }
-#upload{
+.input-image{
     width:70%;
-    height: 10em;
+    height: 15em;
     font-size: large;
-    border: 2px dotted black;
+    border: 4px dotted #306fa2;
+    background-color: transparent;
+    transition-duration:1s ;
+    transition-timing-function: ease-in;
+    margin: auto;
+    margin-top: 3em;
+}
+#upload-label{
+    /* margin-top: 10em; */
+    /* padding-top: 5em; */
+    font-size: 24px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 .output-result{
     display: none;
+}
+#upload-label:hover{
+    background-color: #306fa2;
+    border-color: black;
+    color: white;
+    
 }

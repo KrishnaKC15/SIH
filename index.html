@@ -9,12 +9,10 @@
 </head>
 <body>
     <header>Project Name</header>
-    <section class="intro">Intro about Website
-        <div class="content">
+    <section class="intro">
             
             <div class="heading"><span>Identification and Counting of <br>Microscopic Marine Organisms </span>using AI</div>
             <div class="img"> <img src="assets/intro-img.png" alt="bacteria img"></div>
-        </div>
         <div class="intro-text">
                 Below is a free classifier to identify and count of <br>Microscopic Marine Organisms
         </div>
@@ -22,7 +20,8 @@
     </section>
 
     <section class="input-image">
-        <button><i class="fa-solid fa-cloud-arrow-up"></i> <span>Upload Images</span></button>
+        <label id ="upload-label"  for="upload"><span><i class="fa-solid fa-cloud-arrow-up"></i> <span>Upload Images</span></span></label>
+        <input type="file" id="upload" style="display: none;" multiple accept="image/*">
     </section>
     <section class="output-result">
         <span id="output">output</span>
@@ -30,9 +29,9 @@
         <span>98%</span>
     </section>
 
-    <section class="about-classifier">
+    <!-- <section class="about-classifier">
         How this Classfier works
-    </section>
+    </section> -->
     <script src="script.js"></script>
 </body>
 </html>
